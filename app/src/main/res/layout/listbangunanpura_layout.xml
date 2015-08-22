@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:id="@+id/editTextSearchBangunan"
+        android:hint="Search..."
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/listViewBangunanPura"
+        android:layout_below="@+id/editTextSearchBangunan"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

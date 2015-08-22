@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/layoutMap">
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        xmlns:sothree="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        sothree:umanoPanelHeight="68dp"
+        sothree:umanoShadowHeight="4dp"
+        sothree:umanoParalaxOffset="100dp"
+        sothree:umanoDragView="@+id/dragView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:name="com.google.android.gms.maps.MapFragment"
+                android:id="@+id/fragmentMap" />
+
+            </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#55eeeeee"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="false"
+            android:id="@+id/dragView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:id="@+id/keliatan"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:id="@+id/layoutNav">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight=".50"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:id="@+id/buttonDetNav"
+                        android:gravity="center_vertical|left"
+                        android:text="Show Details"/>
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight=".50"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:id="@+id/buttonStopNav"
+                        android:gravity="center_vertical|right"
+                        android:text="Quit Navigation Mode"/>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:id="@+id/layoutNonNav">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="NAVIGATION MODE IS OFF"
+                        android:textAlignment="center"
+                        android:textSize="19sp"
+                        android:gravity="center_horizontal|center_vertical"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listDetPerjalanan"></ListView>
+
+            </LinearLayout>
+        </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Pocket Temple</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="APIKEY">AIzaSyBJOWIbpN6JiffYbQPLCxrPMpfnIeFW8_g</string>
+    <string name="title_activity_setting">Setting</string>
+    <string name="title_activity_detail_pura">DetailPura</string>
+    <string name="title_activity_test">testActivity</string>
+
+    <array name="member">
+        <item>Member 1</item>
+        <item>Member 2</item>
+        <item>Member 3</item>
+        <item>Member 4</item>
+        <item>Member 5</item>
+        <item>Member 6</item>
+        <item>Member 7</item>
+        <item>Member 8</item>
+        <item>Member 9</item>
+        <item>Member 10</item>
+    </array>
+
+    <array name="jenisOdalan">
+        <item>Wuku</item>
+        <item>Sasih</item>
+    </array>
+
+    <string name="title_activity_more_detail">MoreDetail</string>
+
+    <color name="warnaActionBar">#8bc34a</color>
+    <color name="warnaTextActionBar">#FFFFFF</color>
+    <string name="title_activity_detail_bangunan">DetailBangunan</string>
+    <string name="title_activity_account">Account</string>
+    <string name="title_activity_registrasi">Registration</string>
+    <string name="sharedprefname">PocketTemplePref</string>
+    <string name="title_activity_edit_pura">Edit Pura</string>
+    <string name="title_activity_add_puras">Add Pura</string>
+</resources>
