@@ -66,8 +66,8 @@ public class DetailBangunan extends ActionBarActivity {
         pDialog.show();
 
         final String TAG = DetailBangunan.class.getSimpleName();
-        String urlimg = "http://202.52.11.147/sipura/includes/web-services.php?flag=getIMGBangunan&idbangunan="+id;
-        final String urldesk = "http://202.52.11.147/sipura/includes/web-services.php?flag=getDeskBangunan&idbangunan="+id;
+        String urlimg = "http://" + Utility.servernya + "/sipura/includes/web-services.php?flag=getIMGBangunan&idbangunan="+id;
+        final String urldesk = "http://" + Utility.servernya + "/sipura/includes/web-services.php?flag=getDeskBangunan&idbangunan="+id;
 
         gambarBangunan = new JsonArrayRequest(urlimg, new Response.Listener<JSONArray>() {
             @Override
@@ -85,7 +85,7 @@ public class DetailBangunan extends ActionBarActivity {
                             if (nama.length()>4){
                                 nama = nama.replace(" ", "%20");
                                 TextSliderView textSliderView = new TextSliderView(DetailBangunan.this);
-                                textSliderView.description("Gambar "+String.valueOf(noGambar)).image("http://202.52.11.147/sipura/photos/bangunan/"+id+"/"+nama).setScaleType(BaseSliderView.ScaleType.CenterCrop);
+                                textSliderView.description("Gambar "+String.valueOf(noGambar)).image("http://" + Utility.servernya + "/sipura/photos/bangunan/"+id+"/"+nama).setScaleType(BaseSliderView.ScaleType.CenterCrop);
                                 textSliderView.setOnSliderClickListener(new BaseSliderView.OnSliderClickListener() {
                                     @Override
                                     public void onSliderClick(BaseSliderView baseSliderView) {

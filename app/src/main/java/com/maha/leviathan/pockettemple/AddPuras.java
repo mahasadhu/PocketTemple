@@ -104,10 +104,10 @@ public class AddPuras extends ActionBarActivity implements OnMapReadyCallback {
     String[] listGambar;
     int totImage = 0;
 
-    String url1 = "http://202.52.11.147/sipura/includes/web-services.php?flag=";
-    String url2 = "http://202.52.11.147/sipura/includes/web-services.php?flag=getDesa&address="+String.valueOf(Utility.lat)+","+String.valueOf(Utility.lng);
-    final String url3 = "http://202.52.11.147/sipura/includes/web-services.php?flag=mobileAddPura";
-    String url4 = "http://202.52.11.147/sipura/includes/web-services.php?flag=mobileUploadFotoPura&idpura=";
+    String url1 = "http://" + Utility.servernya + "/sipura/includes/web-services.php?flag=";
+    String url2 = "http://" + Utility.servernya + "/sipura/includes/web-services.php?flag=getDesa&address="+String.valueOf(Utility.lat)+","+String.valueOf(Utility.lng);
+    final String url3 = "http://" + Utility.servernya + "/sipura/includes/web-services.php?flag=mobileAddPura";
+    String url4 = "http://" + Utility.servernya + "/sipura/includes/web-services.php?flag=mobileUploadFotoPura&idpura=";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

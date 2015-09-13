@@ -157,10 +157,10 @@ public class AddPura extends Fragment implements OnMapReadyCallback {
         save = (Button) view.findViewById(R.id.buttonInsertData);
         addfoto = (Button) view.findViewById(R.id.buttonAddFoto);
 
-        String url1 = "http://202.52.11.147/sipura/includes/web-services.php?flag=getKarak";
-        String url2 = "http://202.52.11.147/sipura/includes/web-services.php?flag=getDesa&address="+String.valueOf(Utility.lat)+","+String.valueOf(Utility.lng);
+        String url1 = "http://" + Utility.servernya + "/sipura/includes/web-services.php?flag=getKarak";
+        String url2 = "http://" + Utility.servernya + "/sipura/includes/web-services.php?flag=getDesa&address="+String.valueOf(Utility.lat)+","+String.valueOf(Utility.lng);
         Log.e("URL", url2);
-        final String url3 = "http://202.52.11.147/sipura/includes/web-services.php?flag=mobileAddPura";
+        final String url3 = "http://" + Utility.servernya + "/sipura/includes/web-services.php?flag=mobileAddPura";
 
         utility = new Utility();
 

@@ -33,6 +33,8 @@ public class MoreDetail extends ActionBarActivity implements MaterialTabListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_more_detail);
 
+        getSupportActionBar().setElevation(0);
+
         Intent i = getIntent();
         namapura = i.getStringExtra("NamaPura");
         setTitle(namapura);

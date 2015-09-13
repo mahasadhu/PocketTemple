@@ -68,8 +68,8 @@ public class DetailPura extends ActionBarActivity {
         pDialog.show();
 
         final String TAG = DetailPura.class.getSimpleName();
-        String urlimg = "http://202.52.11.147/sipura/includes/web-services.php?flag=getIMGPura&idpura="+idpura;
-        final String urldesk = "http://202.52.11.147/sipura/includes/web-services.php?flag=getDeskPura&idpura="+idpura;
+        String urlimg = "http://" + Utility.servernya + "/sipura/includes/web-services.php?flag=getIMGPura&idpura="+idpura;
+        final String urldesk = "http://" + Utility.servernya + "/sipura/includes/web-services.php?flag=getDeskPura&idpura="+idpura;
 
         btnMoreDet.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -112,7 +112,7 @@ public class DetailPura extends ActionBarActivity {
                                 if (nama.length()>4){
                                     nama = nama.replace(" ", "%20");
                                     final TextSliderView textSliderView = new TextSliderView(DetailPura.this);
-                                    textSliderView.description("Gambar "+String.valueOf(noGambar)).image("http://202.52.11.147/sipura/photos/pura/"+idpura+"/"+nama).setScaleType(BaseSliderView.ScaleType.CenterCrop);
+                                    textSliderView.description("Gambar "+String.valueOf(noGambar)).image("http://" + Utility.servernya + "/sipura/photos/pura/"+idpura+"/"+nama).setScaleType(BaseSliderView.ScaleType.CenterCrop);
                                     textSliderView.setOnSliderClickListener(new BaseSliderView.OnSliderClickListener() {
                                         @Override
                                         public void onSliderClick(BaseSliderView baseSliderView) {

@@ -24,6 +24,7 @@ public class Utility {
 
     public static double lat = 3000;
     public static double lng = 3000;
+    public static String servernya = "project.it.unud.ac.id";
 
     public void repeatRequestVolley(final JsonArrayRequest reqArray, final Request<JSONObject> reqObj, final StringRequest reqStr, Activity mActivity){
         MaterialDialog.Builder dialog = new MaterialDialog.Builder(mActivity);

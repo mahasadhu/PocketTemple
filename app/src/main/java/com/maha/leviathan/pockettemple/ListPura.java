@@ -44,7 +44,7 @@ public class ListPura extends Fragment {
     ProgressDialog pDialog;
     private static View view;
     private static final String TAG = Main.class.getSimpleName();
-    String url = "http://202.52.11.147/sipura/includes/web-services.php?flag=getAllPura";
+    String url = "http://" + Utility.servernya + "/sipura/includes/web-services.php?flag=getAllPura";
     List<Pura> puraList = new ArrayList<Pura>();
     ListView listView;
     CustomListPuraAdapter customListPuraAdapter;
@@ -57,10 +57,10 @@ public class ListPura extends Fragment {
 
 //    public ListPura(int pilih){
 //        if (pilih == 1){
-//            url = "http://202.52.11.147/sipura/includes/web-services.php?flag=getAllPura";
+//            url = "http://" + Utility.servernya + "/sipura/includes/web-services.php?flag=getAllPura";
 //        }
 //        else if (pilih == 2){
-//            url = "http://202.52.11.147/sipura/includes/web-services.php?flag=getMyPura&iduser="+sharedPreferences.getString("id", "1");
+//            url = "http://" + Utility.servernya + "/sipura/includes/web-services.php?flag=getMyPura&iduser="+sharedPreferences.getString("id", "1");
 //        }
 //    }
 

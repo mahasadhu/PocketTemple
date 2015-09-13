@@ -69,7 +69,7 @@ public class ListBangunanPura extends Fragment {
         editText = (EditText) view.findViewById(R.id.editTextSearchBangunan);
 
         String idpura = ((MoreDetail) getActivity()).idpura;
-        url = "http://202.52.11.147/sipura/includes/web-services.php?flag=getListBangunan&idpura="+idpura;
+        url = "http://" + Utility.servernya + "/sipura/includes/web-services.php?flag=getListBangunan&idpura="+idpura;
 
 //        customListPuraEntityAdapter = new CustomListPuraEntityAdapter(getActivity(), puraEntities);
 //        listView.setAdapter(customListPuraEntityAdapter);

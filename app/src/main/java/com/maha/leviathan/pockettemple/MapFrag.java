@@ -338,7 +338,7 @@ public class MapFrag extends Fragment
 
     public void loadMarker(){
         final String TAG = Main.class.getSimpleName();
-        String url = "http://202.52.11.147/sipura/includes/web-services.php?flag=getAllPura";
+        String url = "http://" + Utility.servernya + "/sipura/includes/web-services.php?flag=getAllPura";
         List<Pura> puraList = new ArrayList<Pura>();
         manageDialog(1, "Loading Pura...");
 

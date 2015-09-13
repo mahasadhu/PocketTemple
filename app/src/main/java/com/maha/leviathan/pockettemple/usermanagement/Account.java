@@ -96,7 +96,7 @@ public class Account extends ActionBarActivity {
                             }
                         });
 
-                        String url = "http://202.52.11.147/sipura/includes/web-services.php?flag=mobileLogin&username="+username.getText().toString()+"&password="+pass.getText().toString();
+                        String url = "http://" + Utility.servernya + "/sipura/includes/web-services.php?flag=mobileLogin&username="+username.getText().toString()+"&password="+pass.getText().toString();
 
                         login = new JsonArrayRequest(Request.Method.POST, url, new Response.Listener<JSONArray>() {
                             @Override

@@ -63,10 +63,10 @@ public class MyListPura extends Fragment {
 
 //    public ListPura(int pilih){
 //        if (pilih == 1){
-//            url = "http://202.52.11.147/sipura/includes/web-services.php?flag=getAllPura";
+//            url = "http://" + Utility.servernya + "/sipura/includes/web-services.php?flag=getAllPura";
 //        }
 //        else if (pilih == 2){
-//            url = "http://202.52.11.147/sipura/includes/web-services.php?flag=getMyPura&iduser="+sharedPreferences.getString("id", "1");
+//            url = "http://" + Utility.servernya + "/sipura/includes/web-services.php?flag=getMyPura&iduser="+sharedPreferences.getString("id", "1");
 //        }
 //    }
 
@@ -87,7 +87,7 @@ public class MyListPura extends Fragment {
 
         sharedPreferences = mActivity.getSharedPreferences(getString(R.string.sharedprefname), Context.MODE_PRIVATE);
         String iduser = sharedPreferences.getString("id", "0");
-        String url = "http://202.52.11.147/sipura/includes/web-services.php?flag=getMyPura&id_user="+iduser;
+        String url = "http://" + Utility.servernya + "/sipura/includes/web-services.php?flag=getMyPura&id_user="+iduser;
         utility = new Utility();
         listView = (ListView) view.findViewById(R.id.listViewPura);
         sQuery = (EditText) view.findViewById(R.id.editTextSearchPura);
@@ -207,7 +207,7 @@ public class MyListPura extends Fragment {
                                 @Override
                                 public void onPositive(MaterialDialog dialog) {
                                     super.onPositive(dialog);
-                                    String urldel = "http://202.52.11.147/sipura/includes/web-services.php?flag=mobileDeletePura&id_pura=" + pura.getId();
+                                    String urldel = "http://" + Utility.servernya + "/sipura/includes/web-services.php?flag=mobileDeletePura&id_pura=" + pura.getId();
                                     delPura = new StringRequest(urldel, new Response.Listener<String>() {
                                         @Override
                                         public void onResponse(String response) {

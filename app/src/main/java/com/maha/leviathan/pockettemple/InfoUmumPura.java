@@ -50,7 +50,7 @@ public class InfoUmumPura extends Fragment {
         listView = (ListView) view.findViewById(R.id.listViewInfoUmumPura);
 
         String idpura = ((MoreDetail) getActivity()).idpura;
-        url = "http://202.52.11.147/sipura/includes/web-services.php?flag=getDetailPura&idpura="+idpura;
+        url = "http://" + Utility.servernya + "/sipura/includes/web-services.php?flag=getDetailPura&idpura="+idpura;
 
         customListPuraEntityAdapter = new CustomListPuraEntityAdapter(getActivity(), puraEntities);
         listView.setAdapter(customListPuraEntityAdapter);

@@ -173,11 +173,11 @@ public class EditPura extends ActionBarActivity implements OnMapReadyCallback {
                         .position(new LatLng(Utility.lat, Utility.lng))
         );
 
-        String url0 = "http://202.52.11.147/sipura/includes/web-services.php?flag=getPuraByID&id_pura="+i.getStringExtra("id");
-        String url1 = "http://202.52.11.147/sipura/includes/web-services.php?flag=";
-        String url2 = "http://202.52.11.147/sipura/includes/web-services.php?flag=getDesa&address="+String.valueOf(Utility.lat)+","+String.valueOf(Utility.lng);
-        final String url3 = "http://202.52.11.147/sipura/includes/web-services.php?flag=mobileUpdatePura";
-        final String url4 = "http://202.52.11.147/sipura/includes/web-services.php?flag=mobileUploadFotoPura&idpura="+i.getStringExtra("id");
+        String url0 = "http://" + Utility.servernya + "/sipura/includes/web-services.php?flag=getPuraByID&id_pura="+i.getStringExtra("id");
+        String url1 = "http://" + Utility.servernya + "/sipura/includes/web-services.php?flag=";
+        String url2 = "http://" + Utility.servernya + "/sipura/includes/web-services.php?flag=getDesa&address="+String.valueOf(Utility.lat)+","+String.valueOf(Utility.lng);
+        final String url3 = "http://" + Utility.servernya + "/sipura/includes/web-services.php?flag=mobileUpdatePura";
+        final String url4 = "http://" + Utility.servernya + "/sipura/includes/web-services.php?flag=mobileUploadFotoPura&idpura="+i.getStringExtra("id");
 
         updatefoto.setOnClickListener(new View.OnClickListener() {
             @Override
